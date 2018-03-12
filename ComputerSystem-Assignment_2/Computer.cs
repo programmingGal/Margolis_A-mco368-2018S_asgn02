@@ -70,7 +70,7 @@ namespace ComputerSystem_Assignment_2
                 }
                 else
                 {
-                    rAM -= 50;
+                    rAM -= 100;
                 }
 
                 if (numLicenses == null)
@@ -137,7 +137,7 @@ namespace ComputerSystem_Assignment_2
             }
             else { output.Append("not applicable"); }
 
-                output.Append("\nHard Drive Capacity: " + hardDriveCapacity?? "not applicable");
+                output.Append($"\nHard Drive Capacity: { hardDriveCapacity?.ToString() ?? "not applicable"}");
                 output.Append($"\nRAM: {rAM}");
                 
                 output.Append("\nLicenses for preinstalled software: ");
